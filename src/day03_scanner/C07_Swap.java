@@ -8,27 +8,25 @@ public class C07_Swap {
 
         // Soru 7 (Interview)- Kullanicidan iki sayi alip ikisinin degerlerini degistirin(swap).
 
+
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Lütfen birinci sayiyi giriniz :");
-        int ilkSayi = scanner.nextInt();
+        System.out.println("Lutfen ilk sayiyi giriniz");
 
-        System.out.println("Lütfen ikinci sayiyi giriniz :");
+        int ilkSayi= scanner.nextInt();
+
+        System.out.println("Lutfen ikinci sayiyi giriniz");
+
         int ikinciSayi = scanner.nextInt();
 
-        int temple = 0;
+        int temp = ilkSayi;
 
-        temple = ilkSayi;
-        ilkSayi= ikinciSayi;
-        ikinciSayi=temple;
+        ilkSayi = ikinciSayi;
 
-        System.out.println("Ilk sayi :" + ilkSayi +
-                "\nIkinci sayi :"  + ikinciSayi);
+        ikinciSayi = temp;
 
 
-
-
-
-
+        System.out.println("ilk sayinin yeni degeri : " + ilkSayi);
+        System.out.println("ikinci sayinin yeni degeri : " + ikinciSayi);
     }
 }

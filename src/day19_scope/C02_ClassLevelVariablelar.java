@@ -4,23 +4,31 @@ public class C02_ClassLevelVariablelar {
 
     static boolean bls;
     boolean bli;
+
     static String strs ="Java";
     String stri;
+
     static int sayis;
     int sayii = 23;
+
     static char chrs = 'a';
     char chri;
+
     public static void main(String[] args) {
+
         System.out.println(bls); // false
         System.out.println(strs); // Java
         System.out.println(sayis); // 0
         System.out.println(chrs); // a
+
         C02_ClassLevelVariablelar obj = new C02_ClassLevelVariablelar();
         System.out.println(obj.bli); // false
         System.out.println(obj.stri); // null
         System.out.println(obj.sayii); // 23
         System.out.println(obj.chri); // ''
+
     }
+
     /*
         Class level kurallar
         1- class level variable'lara deger atanmasa da
@@ -39,10 +47,13 @@ public class C02_ClassLevelVariablelar {
             yazarak ulasabiliriz
             instance variable'lara ulasmak icin ise
             variable'larin oldugu class'dan obje olusturmaliyiz
+
             eger static bir variable'a obje uzerinden ulasmak isterseniz
             Java otomatik olarak getirmez
             ama elle yazarsaniz kabullenir
+
             intellij static variable'a insatance gibi obje uzerinden ulasirsaniz
             kodu sariya boyayarak sizi uyarir
+
      */
 }

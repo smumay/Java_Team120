@@ -6,6 +6,7 @@ public class C04 {
     int kapasite;
     String ogrenciIsmi;
     int hiz;
+
     public void method1(){
         System.out.println("method1 calisti");
     }

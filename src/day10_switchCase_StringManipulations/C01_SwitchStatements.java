@@ -8,15 +8,21 @@ public class C01_SwitchStatements {
 
         // Soru 4- Kullanicidan ISTQB kisaltmasindan harfin anlamini ogrenmek istedigini alin
         //         ve girilen harfin karsiligini yazdirin.
-        //  I : International
-        //  S : Software
-        //  T : Testing
-        //  Q : Qualifications
-        //  B: Board
+        //	I : International
+        //	S : Software
+        //	T : Testing
+        //	Q : Qualifications
+        //	B: Board
+
+
         Scanner scan = new Scanner(System.in);
+
         System.out.println("Lutfen anlamini gormek istediginiz harfi giriniz");
+
         char harf = scan.next().toUpperCase().charAt(0);
+
         switch (harf){
+
             case 'I' :
                 System.out.println("International");
                 break;
@@ -34,6 +40,7 @@ public class C01_SwitchStatements {
                 break;
             default:
                 System.out.println("Yazdiginiz harf ISTQB'de yok");
+
         }
     }
 }

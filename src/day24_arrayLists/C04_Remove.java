@@ -7,7 +7,7 @@ public class C04_Remove {
 
     public static void main(String[] args) {
 
-        List<String>  isimler = new ArrayList<>();
+        List<String> isimler = new ArrayList<>();
 
         isimler.add("Kaan");
         isimler.add("Bulent");
@@ -15,13 +15,16 @@ public class C04_Remove {
         isimler.add("Burhan");
         isimler.add("Kaan");
 
-        System.out.println(isimler);
-        System.out.println(isimler.remove("Hasan"));
-        System.out.println(isimler.remove("Kaan"));
-        System.out.println(isimler);
+        System.out.println(isimler); // [Kaan, Bulent, Tugba, Burhan, Kaan]
 
-        System.out.println(isimler.remove(1));
-        System.out.println(isimler);
+        System.out.println(isimler.remove("Hasan")); // false
+        System.out.println(isimler.remove("Kaan")); // true
+
+        System.out.println(isimler); // [Bulent, Tugba, Burhan, Kaan]
+
+        System.out.println(isimler.remove(1)); // Tugba
+        System.out.println(isimler); // [Bulent, Burhan, Kaan]
+
 
         List<Integer> sayilar = new ArrayList<>();
         sayilar.add(3);
@@ -29,21 +32,19 @@ public class C04_Remove {
         sayilar.add(7);
         sayilar.add(1);
 
-        System.out.println(sayilar);
+        System.out.println(sayilar); // [3, 5, 7, 1]
 
-        System.out.println(sayilar.remove(1));
+        sayilar.remove(1);
+        System.out.println(sayilar); // [3, 7, 1]
 
-        System.out.println(sayilar);
-
+        // ben illa da element olan 1'i silmek istersem
         Integer silinecekElement = 1;
+        sayilar.remove(silinecekElement);
 
-        System.out.println(sayilar.remove(silinecekElement));
-
-        System.out.println(sayilar);
+        System.out.println(sayilar); // [3, 7]
 
         sayilar.clear();
-        System.out.println(sayilar);
-
+        System.out.println(sayilar); // []
 
     }
 }

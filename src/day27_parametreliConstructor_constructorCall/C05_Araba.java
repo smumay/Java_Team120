@@ -8,8 +8,8 @@ public class C05_Araba {
     int fiyat;
     String renk="Renk belirtilmemis";
 
-
     public C05_Araba() {
+
     }
 
     public C05_Araba(String marka, String model, int yil, int fiyat, String renk) {
@@ -19,16 +19,19 @@ public class C05_Araba {
         this.fiyat = fiyat;
         this.renk = renk;
     }
+
     public C05_Araba(String marka, String model, int yil) {
         this.marka = marka;
         this.model = model;
         this.yil = yil;
     }
+
     public C05_Araba(String marka, int yil, int fiyat) {
         this.marka = marka;
         this.yil = yil;
         this.fiyat = fiyat;
     }
+
     public String toString() {
         return "Araba bilgileri ==> " +
                 "marka:'" + marka + '\'' +
@@ -38,14 +41,3 @@ public class C05_Araba {
                 ", renk:'" + renk + '\'' ;
     }
 }
-
-
-
-
-
-
-
-
-
-
-

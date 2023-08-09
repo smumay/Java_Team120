@@ -7,6 +7,7 @@ public class C03_Araba {
     int yil=1900;
     int fiyat;
     String renk="Renk belirtilmemis";
+
     C03_Araba(){
         // Herhangi bir class'a gorunur bir constructor olusturursaniz
         // default constructor silinir
@@ -17,6 +18,9 @@ public class C03_Araba {
         // soruna sebebiyet vermemek icin
         // default cons. yerine parametresiz bir cons. da olusturmaliyiz
     }
+
+
+
     C03_Araba(String mrk,String mdl,int yl,int fyt,String rnk){
         marka = mrk;
         model = mdl;
@@ -24,6 +28,10 @@ public class C03_Araba {
         fiyat = fyt;
         renk = rnk;
     }
+
+
+
+
     public String toString() {
         return "Araba bilgileri ==> " +
                 "marka:'" + marka + '\'' +

@@ -7,6 +7,7 @@ public class C06_KendiSubStringimiz {
         String str = "Java Candir";
         int baslangic= 5;
         int bitis = 7 ;
+
         /*
         Verilen String ve baslangic,bitis degerlerini dikkate alarak
         1- bitis degeri baslangic degerinden kucukse hata mesaji yazdirin
@@ -14,6 +15,7 @@ public class C06_KendiSubStringimiz {
         3- degerler uygunsa baslangic index'inden(dahil), bitis index'ine(haric) kadar
            karakterleri yazdirin
          */
+
         if (baslangic > bitis){
             System.out.println("baslangic degeri bitis degerinden buyuk olamaz");
         }else if(baslangic<0 || bitis<0 || baslangic>=str.length() || bitis>=str.length()){
@@ -23,7 +25,10 @@ public class C06_KendiSubStringimiz {
                 System.out.print(str.charAt(i));
             }
         }
+
+
         System.out.println(str.substring(baslangic,bitis));
+
         str.substring(5);
         /*
             Bu method bize "Candir" döndürür
@@ -33,6 +38,7 @@ public class C06_KendiSubStringimiz {
          */
 
         String strIstenenBolum = str.substring(5); // kaydeder ama yazdirmaz
+
         System.out.println(str.substring(5)); // yazdirir ama kaydetmez
     }
 }
