@@ -9,8 +9,8 @@ public class EMuhasebe extends DHastane{
     EMuhasebe(String str){
         System.out.println("String Parametreli Muhasebe constructor'i calisti");
     }
-    EMuhasebe(int sayi){
-        System.out.println("Int parametreli Muhasebe constructor'i calisti");
+    EMuhasebe(int a){
+        this("Yusuf");
+        System.out.println("int Parametreli Muhasebe constructor'i calisti");
     }
-
 }
