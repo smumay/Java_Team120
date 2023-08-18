@@ -37,6 +37,7 @@ public class soru_37 {
     }
 
 
+
             public static void tekrarlananSayiyiEleme(int [] arr){
 
         ArrayList<Integer> tekrarsizList = new ArrayList<>();

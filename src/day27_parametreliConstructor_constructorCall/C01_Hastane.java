@@ -8,4 +8,7 @@ public class C01_Hastane {
     String personelTelefonu = "telefon atanmadi";
 
 
+
+
+
 }
