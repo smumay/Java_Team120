@@ -14,6 +14,9 @@ public class G_ServisHemsiresi extends F_Hemsire {
     @Override
     public void nobet() {
     }
+
+
+
 }
 
 

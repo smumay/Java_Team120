@@ -29,9 +29,6 @@ public class C01_MethodOlusturma {
 
     } // main method sonu
 
-
-
-
     public static void altString(String metin, int basIndex, int bitIndex ){
 
         if (basIndex>bitIndex){

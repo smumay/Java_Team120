@@ -19,6 +19,8 @@ public class C02_ArrayinElementleriniIstenenKadarArtirma {
 
         System.out.println(Arrays.toString(arr));
 
+        System.out.println("****************************");
+
         int[] sayilar ={5,8,2};
         System.out.println(Arrays.toString(elementleriArtir(sayilar,5)));
 
